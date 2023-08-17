@@ -1,0 +1,121 @@
+
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+  background-color: #dbcbbd; /* Couleur taupe */
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* En-tête */
+header {
+  background-color: #006b7a; /* Bleu turquoise sombre */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Navigation */
+nav {
+  background-color: transparent;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d3e1e2; /* Bleu turquoise sombre */
+}
+
+/* Contenu principal */
+main {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+form button {
+  background-color: #006b7a; /* Bleu turquoise sombre */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #004f5b; /* Bleu turquoise plus foncé */
+}
+
+/* Tableau des promesses de don */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+table th {
+  background-color: #f5f5f5;
+  color: #777;
+}
+
+/* Pied de page */
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  color: #777;
+  text-align: center;
+}

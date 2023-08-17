@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promesses de don enregistrées</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Promesses de don enregistrées</h1>
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/promesse_don">Faire une promesse de don</a></li>
+                <li><a href="/promesses_enregistrees">Nos donateurs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tableau affichant les promesses de don enregistrées -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Adresse</th>
+            <th>E-mail</th>
+            <th>Somme promise</th>
+        </tr>
+        {% for promesse in promesses %}
+        <tr>
+            <td>{{ promesse['nom'] }}</td>
+            <td>{{ promesse['prenom'] }}</td>
+            <td>{{ promesse['adresse'] }}</td>
+            <td>{{ promesse['email'] }}</td>
+            <td>{{ promesse['somme_promise'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <!-- Pied de page avec les informations de contact -->
+    <footer>
+        <p>Contactez-nous : contact@association.org</p>
+    </footer>
+
+    <!-- Intégrer ici les liens vers les fichiers JavaScript -->
+</body>
+</html>
